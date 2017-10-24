@@ -1,0 +1,27 @@
+// ========================================
+//
+// @file clients.scss
+// Paragraph type-clients specific styling
+//
+// ========================================
+.paragraph--type--clients {
+  background-color: #F4F4F4;
+  padding: 70px 0;
+  .field--name-field-title {
+    @include paragraph-title;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .field--name-field-logo {
+    @extend .container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 60px;
+    .field__item {
+      flex-grow: 5;
+    }
+  }
+}

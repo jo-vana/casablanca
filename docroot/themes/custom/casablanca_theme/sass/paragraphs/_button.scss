@@ -1,0 +1,30 @@
+// ========================================
+//
+// @file button.scss
+// Paragraph type-button specific styling
+//
+// ========================================
+.paragraph--type--button-field {
+  display: block;
+  position: relative;
+  .field--name-field-button {
+    display: block;
+    position: absolute;
+    max-width: 500px;
+    height: 100px;
+    border: 3px solid white;
+    text-align: center;
+    top: 39%;
+    left: 30%;
+    right: 29%;
+    a {
+      display: block;
+      max-width: 500px;
+      height: 100px;
+      padding-top: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

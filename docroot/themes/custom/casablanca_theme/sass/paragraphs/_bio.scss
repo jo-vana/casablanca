@@ -1,0 +1,19 @@
+// ========================================
+//
+// @file bio.scss
+// Paragraph type-biography specific styling
+//
+// ========================================
+.paragraph--type--bio-block {
+  .field--name-field-staff {
+    @extend .container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    .field__item {
+      flex-grow: 4;
+      justify-content: space-around;
+    }
+  }
+}

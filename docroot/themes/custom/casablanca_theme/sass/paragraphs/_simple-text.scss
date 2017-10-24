@@ -1,0 +1,19 @@
+// ========================================
+//
+// @file simple-text.scss
+// Paragraph type-title and boddy specific styling
+//
+// ========================================
+.paragraph--type--title-and-body {
+  margin-bottom: 60px;
+  margin-top: 70px;
+  #text-wrapper {
+    @include paragraph-wrapper;
+    .field--name-field-title {
+      @include paragraph-title;
+    }
+    .field--name-field-body {
+      @include paragraph-body;
+    }
+  }
+}

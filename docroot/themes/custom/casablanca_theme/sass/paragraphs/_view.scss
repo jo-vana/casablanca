@@ -1,0 +1,17 @@
+// ========================================
+//
+// @file view.scss
+// Paragraph type-view specific styling
+//
+// ========================================
+.paragraph--type--view {
+  .field--name-field-title {
+    @include paragraph-title;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .field--name-field-view-block {
+    @extend .container;
+  }
+}
