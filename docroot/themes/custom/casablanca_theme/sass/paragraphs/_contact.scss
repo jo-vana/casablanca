@@ -1,0 +1,83 @@
+// ========================================
+//
+// @file contact.scss
+// Paragraph type-info specific styling
+//
+// ========================================
+.paragraph--type--contact {
+  display: flex;
+  flex-direction: row;
+  min-height: 450px;
+  .field--name-field-info {
+    @extend .col-xs-5;
+    background-color: #F2F2F2;
+    padding: 80px 70px 80px 200px;
+    .paragraph--type--info {
+      .field--name-field-title-slide {
+        font-size: 22px;
+        text-transform: uppercase;
+        font-family: $font-big_john_regular;
+      }
+      .field--name-field-body {
+        font-size: 20px;
+        font-style: italic;
+      }
+      .field--name-field-soc-links {
+        .item-list--linkicon {
+          ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-top: 20px;
+            li {
+              span {
+                font-size: 30px;
+                color: black;
+              }
+              span.linkicon__text {
+                display: none;
+              }
+              &:first-child {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .field--name-field-messages {
+    @extend .col-xs-7;
+    background-color: #E4E4E4;
+    .paragraph--type--message {
+      display: block;
+      form {
+        display: block;
+        max-width: 520px;
+        margin: 0 auto;
+        margin-top: 100px;
+        .form-item-name {
+          display: inline-block;
+          @extend .col-xs-pull-6;
+          input {
+            @include input-style;
+          }
+        }
+        .form-item-email {
+          display: inline-block;
+          @extend .col-xs-pull-6;
+          input {
+            @include input-style;
+          }
+        }
+        .form-item-message {
+          textarea {
+            @include input-style;
+            max-width: 500px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+// ========================================
+//
+// @file slider.scss
+// Paragraph type-slider specific styling
+//
+// ========================================
+.paragraph--type--slider-wrapper {
+  @extend .container;
+  .paragraph-wrapper {
+    @include paragraph-wrapper;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    .field--name-field-title-slide {
+      @include paragraph-title;
+    }
+    .field--name-field-body {
+      @include paragraph-body;
+    }
+  }
+  .field--name-field-slider {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    .field__item {
+      flex-grow: 3;
+      justify-content: space-between;
+      align-self: flex-end;
+      text-align: center;
+      margin: 0 15px;
+      .paragraph--type--slide {
+        .field--name-field-slide-img {
+          margin-bottom: 40px;
+          img {
+            margin: 0 auto;
+          }
+        }
+        .field--name-field-title-slide {
+          font-size: 22px;
+        }
+        .field--name-field-body {
+          letter-spacing: 1px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+  .slick-dots li.slick-active button::before{
+    color: orange;
+  }
+}
