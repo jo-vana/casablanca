@@ -1,0 +1,17 @@
+// ========================================
+//
+// @file video.scss
+// Paragraph type-video specific styling
+//
+// ========================================
+.paragraph--type--video-embedded {
+  margin-top: 70px;
+  .field--name-field-video {
+    iframe {
+      width: 100%;
+    }
+  }
+  .field--name-field-background-img {
+    display: none;
+  }
+}

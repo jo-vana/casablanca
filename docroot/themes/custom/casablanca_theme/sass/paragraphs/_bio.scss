@@ -5,15 +5,56 @@
 //
 // ========================================
 .paragraph--type--bio-block {
+  @extend .container;
   .field--name-field-staff {
-    @extend .container;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    display: inline-block;
+    @extend .col-xs-9;
     .field__item {
-      flex-grow: 4;
-      justify-content: space-around;
+      .paragraph--type--bio {
+        display: inline-block;
+        position: relative;
+        @extend .col-xs-4;
+        .field--name-field-bio-img {
+          display: block;
+          width: 100%;
+        }
+        .bio-text-block {
+          display: block;
+          position: absolute;
+          top: 0;
+          height: 278px;
+          width: 207px;
+        }
+      }
+    }
+  }
+  .apply-button {
+    display: inline-block;
+    @extend .col-xs-3;
+    height: 278px;
+    width: 220px;
+    border: 2px solid black;
+    padding: 33px;
+    .field--name-field-title {
+      @include paragraph-title;
+      text-align: center;
+      font-size: 26px;
+    }
+    .field--name-field-button {
+      display: block;
+      width: 150px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 10px 15px;
+      border: 3px solid black;
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        font-family: $font-open-sans;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+      }
     }
   }
 }

@@ -1,0 +1,25 @@
+// ========================================
+//
+// @file footer.scss
+// Paragraph type-footer specific styling
+//
+// ========================================
+.paragraph--type--text-block {
+  background-color: black;
+  min-height: 350px;
+  .field--name-field-body {
+    padding-top: 100px;
+    p {
+      font-family: $font-open-sans;
+      color: white;
+      display: block;
+      max-width: 350px;
+      margin: 0 auto;
+      padding-top: 50px;
+      text-align: center;
+      span {
+        color: orange;
+      }
+    }
+  }
+}
