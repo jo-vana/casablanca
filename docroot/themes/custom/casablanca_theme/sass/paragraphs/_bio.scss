@@ -17,13 +17,55 @@
         .field--name-field-bio-img {
           display: block;
           width: 100%;
+          filter: grayscale(100%);
         }
         .bio-text-block {
+          visibility: hidden;
           display: block;
           position: absolute;
           top: 0;
-          height: 278px;
-          width: 207px;
+          width: 90%;
+          height: 100%;
+          ul {
+            list-style: none;
+            float: right;
+            clear: right;
+            margin: 5px;
+            li {
+              span.linkicon__icon {
+                font-size: 25px;
+                color: white;
+              }
+              span.linkicon__text {
+                display: none;
+              }
+            }
+          }
+          .title {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+            position: relative;
+            bottom: -235px;
+            .field--name-field-title {
+              font-size: 25px;
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+            .field--name-field-ocupation {
+              color: white;
+            }
+          }
+        }
+        &:hover {
+          .field--name-field-bio-img {
+            filter: grayscale(0);
+          }
+          .bio-text-block {
+            visibility: visible;
+          }
         }
       }
     }
@@ -31,10 +73,11 @@
   .apply-button {
     display: inline-block;
     @extend .col-xs-3;
-    height: 278px;
-    width: 220px;
+    height: 346px;
+    max-width: 260px;
     border: 2px solid black;
     padding: 33px;
+    padding-top: 110px;
     .field--name-field-title {
       @include paragraph-title;
       text-align: center;
@@ -45,15 +88,24 @@
       width: 150px;
       margin: 0 auto;
       text-align: center;
-      padding: 10px 15px;
       border: 3px solid black;
       margin-top: 20px;
       a {
+        display: block;
+        width: 150px;
+        height: 50px;
+        padding-top: 10px;
         text-decoration: none;
         font-family: $font-open-sans;
         font-weight: bold;
         font-size: 20px;
         color: black;
+      }
+      &:hover {
+        background-color: black;
+        a {
+          color: white;
+        }
       }
     }
   }

@@ -125,3 +125,6 @@
 				outline: none;
 			}
 }
+@mixin hidden {
+	visibility: hidden;
+}

@@ -5,6 +5,8 @@
 //
 // ========================================
 .paragraph--type--video-embedded {
+  display: block;
+  position: relative;
   margin-top: 70px;
   .field--name-field-video {
     iframe {
@@ -13,5 +15,8 @@
   }
   .field--name-field-background-img {
     display: none;
+    position: absolute;
+    top: 0;
+    z-index: 50;
   }
 }
